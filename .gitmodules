@@ -7,3 +7,9 @@
 [submodule "AnsiblePlaybooks"]
 	path = AnsiblePlaybooks
 	url = https://github.com/RTvsBT/AnsiblePlaybooks.git
+[submodule "RedteamDashboardBackend"]
+	path = RedteamDashboardBackend
+	url = https://github.com/RTvsBT/RedteamDashboardBackend.git
+[submodule "Ransomware"]
+	path = Ransomware
+	url = https://github.com/RTvsBT/Ransomware.git

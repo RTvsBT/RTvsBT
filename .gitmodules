@@ -1,0 +1,9 @@
+[submodule "AutomatedAttackScript"]
+	path = AutomatedAttackScript
+	url = https://github.com/RTvsBT/AutomatedAttackScript.git
+[submodule "VulnerableWebsite"]
+	path = VulnerableWebsite
+	url = https://github.com/RTvsBT/VulnerableWebsite.git
+[submodule "AnsiblePlaybooks"]
+	path = AnsiblePlaybooks
+	url = https://github.com/RTvsBT/AnsiblePlaybooks.git

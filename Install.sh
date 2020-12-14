@@ -18,7 +18,7 @@ if [ ! -d "/opt/RTvsBT" ] ; then
     git clone --recurse-submodules https://github.com/RTvsBT/RTvsBT.git
 else
     cd "RTvsBT"
-    git pull
+    git pull --recurse-submodules
 fi
 
 

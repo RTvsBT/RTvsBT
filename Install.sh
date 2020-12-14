@@ -16,4 +16,7 @@ echo "[+] Clone repo to the /opt folder."
 cd /opt
 git clone --recurse-submodules https://github.com/RTvsBT/RTvsBT.git
 
+echo "[+] Clone repo to the /opt folder."
+cp /opt/RTvsBT/AnsiblePlaybooks/hosts.ini /etc/ansible/hosts
+
 echo "[+] Finished installing ansible."

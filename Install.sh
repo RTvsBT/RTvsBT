@@ -14,7 +14,13 @@ apt install ansible
 echo "[+] Clone repo to the /opt folder."
 
 cd /opt
-git clone --recurse-submodules https://github.com/RTvsBT/RTvsBT.git
+if [ ! -d "/opt/RTvsBT" ] ; then
+    git clone --recurse-submodules https://github.com/RTvsBT/RTvsBT.git
+else
+    cd "RTvsBT"
+    git pull
+fi
+
 
 echo "[+] Clone repo to the /opt folder."
 cp /opt/RTvsBT/AnsiblePlaybooks/hosts.ini /etc/ansible/hosts

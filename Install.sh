@@ -16,11 +16,11 @@ echo "[+] Clone repo to the /opt folder."
 cd /opt
 if [ ! -d "/opt/RTvsBT" ] ; then
     git clone --recurse-submodules https://github.com/RTvsBT/RTvsBT.git
-else
-    cd "RTvsBT"
-    git pull --recurse-submodules
 fi
-
+cd /opt/RTvsBT
+git submodule update
+git submodule foreach git checkout main
+git submodule foreach git pull origin main
 
 echo "[+] Clone repo to the /opt folder."
 cp /opt/RTvsBT/AnsiblePlaybooks/hosts.ini /etc/ansible/hosts

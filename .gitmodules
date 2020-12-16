@@ -13,3 +13,9 @@
 [submodule "Ransomware"]
 	path = Ransomware
 	url = https://github.com/RTvsBT/Ransomware.git
+[submodule "Ticketing-zammad"]
+	path = Ticketing-zammad
+	url = https://github.com/RTvsBT/Ticketing-zammad.git
+[submodule "RedteamDashboardFrontend"]
+	path = RedteamDashboardFrontend
+	url = https://github.com/RTvsBT/RedteamDashboardFrontend.git

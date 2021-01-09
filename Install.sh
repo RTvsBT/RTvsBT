@@ -6,21 +6,21 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 echo "[+] Install ansible."
-apt update
+apt update >> log.txt 2>&1
 apt install software-properties-common
 apt-add-repository --yes --update ppa:ansible/ansible
-apt install ansible sshpass
+apt install ansible sshpass >> log.txt 2>&1
 
 echo "[+] Clone repo to the /opt folder."
 
 cd /opt
 if [ ! -d "/opt/RTvsBT" ] ; then
-    git clone --recurse-submodules https://github.com/RTvsBT/RTvsBT.git
+    git clone --recurse-submodules https://github.com/RTvsBT/RTvsBT.git >> log.txt 2>&1
 fi
 cd /opt/RTvsBT
-git submodule update
-git submodule foreach git checkout main
-git submodule foreach git pull origin main
+git submodule update >> log.txt 2>&1
+git submodule foreach git checkout main >> log.txt 2>&1
+git submodule foreach git pull origin main >> log.txt 2>&1
 
 echo "[+] Clone repo to the /opt folder."
 

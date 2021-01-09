@@ -23,6 +23,8 @@ git submodule foreach git checkout main
 git submodule foreach git pull origin main
 
 echo "[+] Clone repo to the /opt folder."
+
 cp /opt/RTvsBT/AnsiblePlaybooks/hosts.ini /etc/ansible/hosts
+cp /opt/RTvsBT/AnsiblePlaybooks/assets/ansible.cfg /etc/ansible/ansible.cfg
 
 echo "[+] Finished installing ansible."

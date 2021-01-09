@@ -9,7 +9,7 @@ echo "[+] Install ansible."
 apt update >> log.txt 2>&1
 apt install software-properties-common
 apt-add-repository --yes --update ppa:ansible/ansible
-apt install ansible sshpass >> log.txt 2>&1
+apt-get -y install ansible sshpass >> log.txt 2>&1
 
 echo "[+] Clone repo to the /opt folder."
 

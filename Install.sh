@@ -22,7 +22,7 @@ git submodule update >> log.txt 2>&1
 git submodule foreach git checkout main >> log.txt 2>&1
 git submodule foreach git pull origin main >> log.txt 2>&1
 
-echo "[+] Clone repo to the /opt folder."
+echo "[+] Configure config files."
 
 cp /opt/RTvsBT/AnsiblePlaybooks/hosts.ini /etc/ansible/hosts
 cp /opt/RTvsBT/AnsiblePlaybooks/assets/ansible.cfg /etc/ansible/ansible.cfg
